@@ -355,6 +355,9 @@ body{
 
 
 @media screen and (max-width: 991.98px){
+*{
+	color: black;
+	}
     .container p{
         font-size: 3vmin;
         line-height: 3vmax;
