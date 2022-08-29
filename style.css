@@ -355,7 +355,7 @@ body{
 
 
 @media screen and (max-width: 991.98px){
-*{
+body{
 	color: black;
 	}
     .container p{
@@ -404,11 +404,11 @@ body{
         display: inline-block;
     }
     #page-border-radius .border-radius-content .subpage1, #page-border-radius .border-radius-content .subpage2, #page-border-radius .border-radius-content .subpage3{
-        height: 20vmax;
+        overflow : auto;
     }
     #page-border-radius .border-radius-content .subpage1 p, #page-border-radius .border-radius-content .subpage2 p, #page-border-radius .border-radius-content .subpage3 p{
-        font-size: 0.9vmax;
-        line-height: 0.9vmax;
+        font-size: 1.3vmax;
+        line-height: 1vmax;
     }
 
     #page-opacity .opacity-content .sub-content .page1{
