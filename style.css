@@ -1,0 +1,440 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* CSS reset */
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
+/* Micro Clear Fix */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+/* Header */
+.container h2{
+    font-size: 2.8vw;
+    text-align: center;
+    letter-spacing: 2px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.container hr{
+    width: 30vmax;
+    border-top: 1px solid #666;
+    border-bottom: 1px solid #666;
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+
+.header{
+    background-color: #9eecfa;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 0 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.header .circle{
+    width: 25vmax;
+    height: 25vmax;
+    margin:  auto;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    background-image: url(gambar/css3-markup.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30vmax;
+    border: 5px solid rgb(43, 82, 255);
+}
+.header h1{
+    margin: 10px auto;
+    margin-top: 20px;
+    font-size: 7vmax;
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+}
+.header p{
+    padding: 0 40px;
+    letter-spacing: 1px;
+    line-height: 4vmin;
+    text-align: center;
+    font-size: 3vmin;
+    margin: auto;
+    margin-top: 50px;
+    font-weight: 600;
+}
+
+/* Content Pendahuluan */
+#page-pendahuluan{
+    padding: 50px 180px;
+}
+#page-pendahuluan .pendahuluan-content{
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+#page-pendahuluan .pendahuluan-content .page1{
+    display: flex;
+    flex-direction: row;
+}
+#page-pendahuluan img{
+    display: inline-block;
+    border-radius: 50%;
+    width: 30vmax;
+    padding: 10px;
+    margin: auto;
+}
+#page-pendahuluan .pendahuluan-content p{
+    word-spacing: 5px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    text-align: justify;
+    font-size: 2vmin;
+}
+
+
+/* content border-radius */
+#page-border-radius{
+    background-color: #9eecfa;
+    padding: 50px 0;
+}
+#page-border-radius .border-radius-content{
+    width: 80%;
+    margin: 0 auto;
+}
+#page-border-radius .border-radius-content .page1, #page-border-radius .border-radius-content .page2{
+    width: 46%;
+    float: left;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    text-align: justify;
+}
+#page-border-radius .border-radius-content .page1{
+    margin-right: 2%;
+}
+#page-border-radius .border-radius-content .page2{
+    margin-left: 2%;
+}
+.container h3{
+    font-size: 3.5vmin;
+    margin: 20px 0;
+    font-weight: bold;
+}
+#page-border-radius .border-radius-content .page2 img{
+    border-radius: 10px;
+    width: 45%;
+    margin: 10px 20px 10px 0;
+    float: left;
+}
+
+/* content border-radius, contoh penggunaan */
+#page-border-radius .border-radius-content .subpage1, #page-border-radius .border-radius-content .subpage2, #page-border-radius .border-radius-content .subpage3{
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 30%;
+    float: left;
+    position: relative;
+    height: 150px;
+    background-color: salmon;
+}
+#page-border-radius .border-radius-content .subpage1{
+    margin-right: 5%;
+    margin-top: 50px;
+}
+#page-border-radius .border-radius-content .subpage2{
+    margin-top: 50px;
+}
+#page-border-radius .border-radius-content .subpage3{
+    margin-left: 5%;
+    margin-top: 50px;
+}
+/* logo panah */
+#page-border-radius .border-radius-content .direct{
+    width: 10%;
+    position: absolute;
+    top: 40%;
+    right: -13%;
+}
+/* -------------- */
+#page-border-radius .border-radius-content .kotak{
+    width: 80px;
+    height: 80px;
+    background-color: lightgoldenrodyellow;
+    margin: 0 auto;
+}
+#page-border-radius .border-radius-content .cth1 p, #page-border-radius .border-radius-content .cth2 p, #page-border-radius .border-radius-content .cth3 p{
+    font-size: 2vmin;
+    margin-top: 10px;
+    text-align: center;
+}
+#page-border-radius .border-radius-content .subpage1 .layout1{
+    border-radius: 5px;
+}
+#page-border-radius .border-radius-content .subpage2 .layout2{
+    border-radius: 20px;
+}
+#page-border-radius .border-radius-content .subpage3 .layout3{
+    border-radius: 50%;
+}
+
+#page-border-radius .border-radius-content .subpage1 .image1, #page-border-radius .border-radius-content .subpage2 .image2, #page-border-radius .border-radius-content .subpage3 .image3{
+    border-radius: 0 50% 0 50%;
+}
+#page-border-radius .border-radius-content .cth2 .kotak img{
+    width: 80px;
+    height: 80px;
+}
+#page-border-radius .border-radius-content .subpage3 .image3{
+    overflow: hidden;
+}
+
+#page-border-radius .border-radius-content .subpage1 .bgimage1, #page-border-radius .border-radius-content .subpage2 .bgimage2, #page-border-radius .border-radius-content .subpage3 .bgimage3{
+    border-radius: 50% 50% 0 50%;
+}
+#page-border-radius .border-radius-content .subpage2 .bgimage2{
+    background-image: url(gambar/border-radius/author.jpg);
+    background-position: center;
+    background-size: 60px;
+}
+#page-border-radius .border-radius-content .subpage3 .bgimage3{
+    background-image: url(gambar/border-radius/author.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* page-opacity */
+#page-opacity{
+    padding: 50px 0;
+}
+#page-opacity .opacity-content{
+    width: 70%;
+    margin : 0 auto;
+}
+/* page-opacity main-content */
+#page-opacity .opacity-content .main-content{
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+    word-spacing: 10px;
+    line-height: 25px;
+}
+
+/* page-opacity sub-content */
+#page-opacity .opacity-content .sub-content{
+    background-image: url(gambar/opacity/cloudy-day.png);
+    box-sizing: border-box;
+}
+#page-opacity .opacity-content .sub-content .page1{
+    letter-spacing: 2px;
+    word-spacing: 10px;
+    line-height: 25px;
+    width: 60%;
+    float: right;
+    padding: 10px;
+    margin: 35px auto;
+}
+#page-opacity .opacity-content .sub-content img{
+    display: none;
+}
+#page-opacity .opacity-content .sub-content .page2{
+    width: 30%;
+    border-right: 10px solid white;
+    padding: 50px 5px;
+    border-bottom: 5px solid white;
+}
+#page-opacity .opacity-content .sub-content .page2 .kotak{
+    margin: 10px auto;
+    width: 150px;
+    height: 150px;
+    background-color: #f60;
+    opacity: .5;
+    font-size: 30px;
+    text-align: center;
+    line-height: 150px;
+    position: relative;
+}   
+#page-opacity .opacity-content .sub-content .page2 .kotak .sub-kotak1, #page-opacity .opacity-content .sub-content .page2 .kotak .sub-kotak2, #page-opacity .opacity-content .sub-content .page2 .kotak .sub-kotak3 {
+    width: 50px;
+    height: 50px;
+    background-color: purple;
+    position: absolute;
+    line-height: 1.6;
+}
+#page-opacity .opacity-content .sub-content .page2 .kotak .sub-kotak2{
+    right: -20px;
+    bottom: -20px;
+    opacity: .5;
+}
+
+#page-opacity .opacity-content .sub-content .page2 .tiga{
+    opacity: 1;
+}
+#page-opacity .opacity-content .sub-content .page2 .kotak .sub-kotak3{
+    right: -20px;
+    bottom: -20px;
+    opacity: 0.5;
+}
+
+/* page-color */
+#page-color{
+    background-color: #9eecfa;
+    padding: 50px 100px;
+}
+#page-color .color-content{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+#page-color .color-content .template{
+    margin: auto;
+}
+#page-color .color-content .rgba{
+    margin: auto;
+    text-align: justify;
+    letter-spacing: 4px;
+    word-spacing: 2px;
+    line-height: 30px;
+}
+
+
+
+
+
+
+@media screen and (max-width: 991.98px){
+    .container p{
+        font-size: 1.8vmin;
+        line-height: 2.5vmax;
+    }
+    .container h3{
+        font-size: 2.3vmin;
+    }
+    .container .header .circle {
+        width: 35vmax;
+        height: 35vmax;
+        background-size: 42vmax;
+    }
+    .container .header p{
+        font-size: 0.8rem;
+        font-weight: 700;
+    }
+
+    #page-pendahuluan{
+        padding: 50px 50px;
+    }
+    #page-pendahuluan .pendahuluan-content .page1{
+        flex-direction: column;
+    }
+    #page-pendahuluan .pendahuluan-content img{
+        width: 60vmin;
+        margin: auto;
+        margin-top: -20px;
+    }
+
+    #page-border-radius .border-radius-content .page2, #page-border-radius .border-radius-content .page1{
+        float: none;
+        text-align: justify;
+        margin: 0px auto;
+        width: 100%;
+    }
+    #page-border-radius .border-radius-content .page2 img{
+        float: none;
+        width: 48%;
+        margin: 0 auto;
+        display: inline-block;
+    }
+    #page-border-radius .border-radius-content .subpage1, #page-border-radius .border-radius-content .subpage2, #page-border-radius .border-radius-content .subpage3{
+        height: 20vmax;
+    }
+    #page-border-radius .border-radius-content .subpage1 p, #page-border-radius .border-radius-content .subpage2 p, #page-border-radius .border-radius-content .subpage3 p{
+        font-size: 0.9vmax;
+        line-height: 0.9vmax;
+    }
+
+    #page-opacity .opacity-content .sub-content .page1{
+        float: none;
+        padding: 20px 0 0;
+        width: 80%;
+    }
+    #page-opacity .opacity-content .sub-content img{
+        display: block;
+        width: 100px;
+        margin: 0 auto;
+    }
+    #page-opacity .opacity-content .sub-content .page2{
+        width: 100%;
+        border-right: 0;
+        border-bottom: 5px solid white;
+        padding-top: 0;
+        padding-bottom: 30px;
+        margin-top: -20px;
+    }
+    #page-opacity .opacity-content .sub-content .page2 .kotak{
+        margin: 0 auto;
+    }
+
+    #page-color .color-content{
+        flex-direction: column;
+    }
+    #page-color .color-content .template{
+        width: 50vmin;
+        margin: auto;
+    }
+    #page-color .color-content .rgba{
+        word-spacing: 1px;
+        letter-spacing: 1px;
+    }
+}

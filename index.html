@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Belajar Programan CSS3,CSS3,CSS">
+    <meta name="Author" content="J_J">
+    <link rel="Icon" href="icon/CSS3.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Belajar CSS3</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="circle"></div>
+            <h1>CSS3</h1>
+            <p>"Dalam materi kali ini kita akan membahas mengenai programan Web generasi ke-3 dari CSS, CSS3 dibagi menjadi beberapa modul, dan tiap-tiap modulnya menambahkan kemampuan / fitur yang ada di CSS2"</p>
+        </div>
+        <div id="page-pendahuluan">
+            <h2>Pendahuluan</h2>
+            <hr>
+            <div class="pendahuluan-content cf">
+                <div class="page1">
+                    <img src="gambar/pendahuluan/CSS-Diagram.jpg" alt="CSS-Diagram">
+                    <p>Jika kita ingin melihat perbedaan antara CSS3 dan CSS generasi sebelumnya bisa dilihat pada diagram berikut, yang mengelompokkan menjadi 3 bagian. Diagram pertama atau diagram yang paling kecil merupakan CSS generasi pertama(CSS Dasar), isi dari CSS generasi 1 berupa syntax/code dari CSS dasar. CSS generasi ke-2 isinya sebagian merupakan syntax/code dari CSS Layouting yang memungkinkan kita mengatur tata letak posisi atau elemen sesuai yang kita mau. Kita masih bisa mengakses properti properti tersebut walaupun kita menggunakan CSS3, karena pada CSS3 fitur fitur yang ada pada CSS sebelumnya ditambah, diperbaiki dan bahkan di hilangkan. Properti pada CSS3 disebut modul seperti yang sudah di jelaskan. Dalam materi kali ini kita akan membahas properti yang paling sering digunakan / yang paling penting, berikut merupakan properti-properti nya.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="page-border-radius">
+            <h2>Border-Radius</h2>
+            <hr>
+            <div class="border-radius-content cf">
+                <div class="page1">
+                    <h3>Definisi</h3>
+                    <p>Border Radius merupakan sebuah properti yang bisa membuat sebuah pembungkus elemen(kotak pembungkus) diberbagai sisinya menjadi tumpul atau pun lingkaran, dan biasanya border radius digunakan ketika kita ingin menaruh sebuah gambar seperti bingkai.</p>
+                </div>
+                <div class="page2">
+                    <h3>Cara Menggunakan</h3>
+                    <p>Untuk menggunakan border radius kita hanya perlu menambahkan code (border-radius : value;), dan untuk nilai/valuenya sendiri kita bisa menggunakan px dan % untuk mengatur besar lengkungan. ukuran maksimal yang bisa diberikan oleh border radius adalah (dalam px) setengah dari ukuran kotak/elemen pembungkusnya atau 50% dan kotak akan menjadi lingkaran (tergantung kita mengatur arah border radiusnya.<br> Kita bisa mengatur semua sisi sekaligus ataupun beberapa sisi dengan code berikut :</p>
+                    <img src="gambar/border-radius/direction.png" alt="direction">
+                    <img src="gambar/border-radius/Value border-radius.jpg" alt="Value">
+                    <p>(sebelah kiri adalah gambar untuk mengatur setiap sisi dan sebelah kanan merupakan shorthandnya)</p>
+                </div>
+                <h3>Contoh Penggunaan</h3>
+                <div class="cth1">
+                    <div class="subpage1">
+                        <div class="layout1 kotak"></div>
+                        <img src="gambar/border-radius/right direct.png" alt="direct" class="direct">
+                        <p>diberi radius 5px</p>
+                    </div>
+                    <div class="subpage2">
+                        <div class="layout2 kotak"></div>
+                        <img src="gambar/border-radius/right direct.png" alt="direct" class="direct">
+                        <p>diberi radius 20px</p>
+                    </div>
+                    <div class="subpage3">
+                        <div class="layout3 kotak"></div>
+                        <p>diberi radius setengah dari ukuran kotak, namun lebih praktis tinggal memberikan nilai 50% agar menyesuaikan ukuran kotak</p>
+                    </div>
+                </div>
+                <div class="cth2">
+                    <div class="subpage1">
+                        <div class="image1 kotak"></div>
+                        <img src="gambar/border-radius/right direct.png" alt="direct" class="direct">
+                        <p>dalam kasus ini kita akan menggunakan Tag image(img)</p>
+                    </div>
+                    <div class="subpage2">
+                        <div class="image2 kotak"><img src="gambar/border-radius/author.jpg" alt="author"></div>
+                        <img src="gambar/border-radius/right direct.png" alt="direct" class="direct">
+                        <p>ketika menggunakan (img) maka kotak pembungkusnya berada di belakang gambar</p>
+                    </div>
+                    <div class="subpage3">
+                        <div class="image3 kotak"><img src="gambar/border-radius/author.jpg" alt="author"></div>
+                        <p>cara mengakalinya menggunakan properti overflow dan value hidden agar gambar yang keluar flow disembunyikan</p>
+                    </div>
+                </div>
+                <div class="cth3">
+                    <div class="subpage1">
+                        <div class="bgimage1 kotak"></div>
+                        <img src="gambar/border-radius/right direct.png" alt="direct" class="direct">
+                        <p>dalam kasus ini kita menggunakan background-image</p>
+                    </div>
+                    <div class="subpage2">
+                        <div class="bgimage2 kotak"></div>
+                        <img src="gambar/border-radius/right direct.png" alt="direct" class="direct">
+                        <p>properti background ketika tidak diatur maka gambar akan berulang, dan kita harus menghentikannya dengan properti background-repeat dengan value no-repeat</p>
+                    </div>
+                    <div class="subpage3">
+                        <div class="bgimage3 kotak"></div>
+                        <p>lalu untuk membuat gambar agar sesuai dengan parent pembungkusnya maka kita harus memberi properti background-size dengan value cover</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="page-opacity">
+            <h2>Opacity</h2>
+            <hr>
+            <div class="opacity-content cf">
+                <div class="main-content">
+                    <h3>Definisi</h3>
+                    <p>Opacity memungkinkan kita untuk membuat sebuah elemen menjadi transparan, tanpa CSS3 kita tidak bisa mengatur opacity melainkan menggunakan bantuan photosop yang membuatnya menjadi tidak praktis. Opacity juga memudahkan untuk kita mengatur besar nilai transparansi yang kita mau.</p>
+                    <h3>Sifat & Perilaku</h3>
+                    <p>Opacity juga mempunyai sifat & perilaku yang harus kita ketahui, opacity merupakan properti yang memiliki sifat inherit (pewarisan). mengapa dikatakan mempunyai sifat inherit, karena properti opacity mewariskan transparannya kepada elemen child(elemen didalamnya) sehingga elemen childnya menjadi transparant dengan tingkat transparansi yang sama dengan parentnya.
+                    <h3>Penggunaan</h3>
+                </div>
+
+                <div class="sub-content">
+                    <div class="page1">
+                        <p>dalam opacity kita bisa memberikan nilai/value berupa pecahan desimal atau persen%, seperti kotak disamping yang diberi opacity dengan value (0.5)</p>
+                        <img src="gambar/opacity/arrow_down.png" alt="arrow down">
+                    </div>
+                    <div class="page2"><div class="kotak satu"></div></div>
+
+                    <div class="page1">
+                        <p>berikut merupakan konsep inherit yang dimana elemen parent(kotak berwarna orange) diberi opacity (0.5) dan kemudian elemen child nya (kotak berwarna ungu) juga menjadi transparan seperti parentnya dan elemen yang ada di dalamnya sebesar (0.5/50%).</p>
+                        <img src="gambar/opacity/arrow_down.png" alt="arrow down">
+                    </div>
+                    <div class="page2">
+                        <div class="kotak dua">
+                            <div class="sub-kotak1"><p>2</p></div>
+                            <p>1</p>
+                        </div>
+                    </div>
+
+                    <div class="page1">
+                        <p>agar elemen childnya lebih transparan dari parentnya maka diberi opacity (0.5), namun dalam hal ini karena elemen parentnya sudah diberi opacity sebesar (0.5) ketika child nya diberi nilai lagi maka nilai tersebut relatif terhadap nilai opacity parentnya, maka nilai child nya menjadi 1/2 dari 0.5 (1/2 x 0.5 = 0.25)</p>
+                        <img src="gambar/opacity/arrow_down.png" alt="arrow down">
+                    </div>
+                    <div class="page2">
+                        <div class="kotak dua">
+                            <div class="sub-kotak2"><p>2</p></div>
+                            <p>1</p>
+                        </div>
+                    </div>
+
+                    <div class="page1">
+                        <p>kita tidak bisa membuat elemen child tingkat transparansi/opacity-nya lebih tinggi dari parentnya, jadi seolah-olah elemen parent memaksa elemen childnya menjadi transparan.</p>
+                        <img src="gambar/opacity/arrow_down.png" alt="arrow down">
+                    </div>
+                    <div class="page2">
+                        <div class="kotak tiga">
+                            <div class="sub-kotak3"><p>2</p></div>
+                            <p>1</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="page-color">
+            <h2>RGBa & HSLa</h2>
+            <hr>
+            <div class="color-content cf">
+                <img src="gambar/color/template.png" alt="template" class="template">
+                <div class="rgba">
+                    <p>CSS3 memperkaya penggunaan warna(color) yang bisa kita atur sesuai yang kita mau dengan berbagai pilihan. selain itu penggunaan transparansi warna juga bisa kita lakukan dan memudahkan kita dibandingkan menggunakan opacity yang bersifat inherit (penggunaan transparasi disini hanya di khususkan untuk penggunaan warna BUKAN gambar)</p>
+                </div>
+                <div class="hsla"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
