@@ -357,7 +357,7 @@ body{
 @media screen and (max-width: 991.98px){
     .container p{
         font-size: 3vmin;
-        line-height: 2.5vmax;
+        line-height: 3vmax;
     }
 
     .container .header .circle {
@@ -380,7 +380,7 @@ body{
         font-size: 3vmin;
         word-spacing: 0;
         letter-spacing: 1px;
-        line-height: 16px;
+        line-height: 25px;
     }
     #page-pendahuluan .pendahuluan-content img{
         width: 60vmin;
@@ -430,6 +430,9 @@ body{
         margin: 0 auto;
     }
 
+    #page-color {
+        padding: 50px;
+    }
     #page-color .color-content{
         flex-direction: column;
     }
