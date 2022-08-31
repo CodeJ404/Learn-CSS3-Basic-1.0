@@ -117,7 +117,7 @@ body{
 
 /* Content Pendahuluan */
 #page-pendahuluan{
-    padding: 50px 180px;
+    padding: 50px 150px;
 }
 #page-pendahuluan .pendahuluan-content{
     margin: 0 auto;
@@ -130,7 +130,7 @@ body{
 #page-pendahuluan img{
     display: inline-block;
     border-radius: 50%;
-    width: 30vmax;
+    width: 35vmax;
     padding: 10px;
     margin: auto;
 }
@@ -139,7 +139,7 @@ body{
     letter-spacing: 1px;
     line-height: 30px;
     text-align: justify;
-    font-size: 2vmin;
+    font-size: 1.5vmax;
 }
 
 
@@ -179,6 +179,10 @@ body{
 }
 
 /* content border-radius, contoh penggunaan */
+.border-radius-content h4{
+    margin: 30px 0;
+    display: inline-block;
+}
 #page-border-radius .border-radius-content .subpage1, #page-border-radius .border-radius-content .subpage2, #page-border-radius .border-radius-content .subpage3{
     padding: 5px;
     box-sizing: border-box;
@@ -191,14 +195,14 @@ body{
 }
 #page-border-radius .border-radius-content .subpage1{
     margin-right: 5%;
-    margin-top: 50px;
+    margin-top: 10px;
 }
 #page-border-radius .border-radius-content .subpage2{
-    margin-top: 50px;
+    margin-top: 10px;
 }
 #page-border-radius .border-radius-content .subpage3{
     margin-left: 5%;
-    margin-top: 50px;
+    margin-top: 10px;
 }
 /* logo panah */
 #page-border-radius .border-radius-content .direct{
@@ -355,21 +359,23 @@ body{
 
 
 @media screen and (max-width: 991.98px){
-body{
-	color: black;
-	}
     .container p{
-        font-size: 3vmin;
+        font-size: 2.5vmax;
         line-height: 3vmax;
     }
-
+    .container h2{
+        font-size: 3vmax;
+    }
+    .container h3{
+        font-size: 2.7vmax;
+    }
     .container .header .circle {
         width: 35vmax;
         height: 35vmax;
         background-size: 42vmax;
     }
     .container .header p{
-        font-size: 0.8rem;
+        font-size: 2vmax;
         font-weight: 700;
     }
 
@@ -380,15 +386,16 @@ body{
         flex-direction: column;
     }
     #page-pendahuluan .pendahuluan-content .page1 p{
-        font-size: 3vmin;
-        word-spacing: 0;
-        letter-spacing: 1px;
-        line-height: 25px;
+        font-size: 2.2vmax;
+        word-spacing: 0px;
+        letter-spacing: -1px;
+        line-height: 3.5vmax;
     }
     #page-pendahuluan .pendahuluan-content img{
-        width: 60vmin;
+        width: 44vmax;
         margin: auto;
         margin-top: -20px;
+        display: none;
     }
 
     #page-border-radius .border-radius-content .page2, #page-border-radius .border-radius-content .page1{
@@ -403,13 +410,32 @@ body{
         margin: 0 auto;
         display: inline-block;
     }
+    #page-border-radius .border-radius-content h4{
+        margin: 0 auto;
+        text-align: center;
+        display: block;
+        font-style: italic;
+    }
     #page-border-radius .border-radius-content .subpage1, #page-border-radius .border-radius-content .subpage2, #page-border-radius .border-radius-content .subpage3{
-        overflow : auto;
+        display: flex;
+        flex-direction: column;
+        float: none;
+        margin: 30px auto;
+        width: 30vmax;
+        height: 33vmax;
+    }
+    #page-border-radius .border-radius-content .subpage1 .kotak, #page-border-radius .border-radius-content .subpage2 .kotak, #page-border-radius .border-radius-content .subpage3 .kotak{
+        margin: 0 auto 10px;
+    }
+    #page-border-radius .border-radius-content .subpage1 img, #page-border-radius .border-radius-content .subpage2 img, #page-border-radius .border-radius-content .subpage3 img{
+        display: none;
     }
     #page-border-radius .border-radius-content .subpage1 p, #page-border-radius .border-radius-content .subpage2 p, #page-border-radius .border-radius-content .subpage3 p{
-        font-size: 1.3vmax;
-        line-height: 1vmax;
+        line-height: 2.5vmax;
+        font-size: 2.3vmax;
+        margin: 0 auto;
     }
+
 
     #page-opacity .opacity-content .sub-content .page1{
         float: none;
