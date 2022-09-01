@@ -85,15 +85,15 @@ body{
     font-family: 'Courier New', Courier, monospace;
 }
 .header .circle{
-    width: 25vmax;
-    height: 25vmax;
+    width: 20vmax;
+    height: 20vmax;
     margin:  auto;
     margin-bottom: 20px;
     border-radius: 50%;
     background-image: url(gambar/css3-markup.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 30vmax;
+    background-size: cover;
     border: 5px solid rgb(43, 82, 255);
 }
 .header h1{
@@ -375,7 +375,7 @@ body{
     .container .header .circle {
         width: 35vmax;
         height: 35vmax;
-        background-size: 42vmax;
+        background-size: cover;
     }
     .container .header p{
         font-size: 2vmax;
@@ -428,7 +428,7 @@ body{
         height: 33vmax;
     }
     #page-border-radius .border-radius-content .subpage1 .kotak, #page-border-radius .border-radius-content .subpage2 .kotak, #page-border-radius .border-radius-content .subpage3 .kotak{
-        margin: 0 auto 10px;
+        margin: auto;
     }
     #page-border-radius .border-radius-content .subpage1 .direct, #page-border-radius .border-radius-content .subpage2 .direct, #page-border-radius .border-radius-content .subpage3 .direct{
         display: none;
@@ -436,7 +436,7 @@ body{
     #page-border-radius .border-radius-content .subpage1 p, #page-border-radius .border-radius-content .subpage2 p, #page-border-radius .border-radius-content .subpage3 p{
         line-height: 2.5vmax;
         font-size: 2.3vmax;
-        margin: 0 auto;
+        margin: auto;
     }
 
 
