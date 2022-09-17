@@ -135,7 +135,7 @@ body{
     margin: auto;
 }
 #page-pendahuluan .pendahuluan-content p{
-    word-spacing: 5px;
+    word-spacing: 3px;
     letter-spacing: 1px;
     line-height: 30px;
     text-align: justify;
@@ -348,11 +348,19 @@ body{
 #page-color .color-content .rgba{
     margin: auto;
     text-align: justify;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
     word-spacing: 2px;
     line-height: 30px;
 }
+#page-color .color-content img {
+    -webkit-animation: mover 2s infinite  alternate;
+    animation: mover 2s infinite  alternate;
+}
 
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
 
 
 
@@ -378,7 +386,7 @@ body{
         background-size: cover;
     }
     .container .header p{
-        font-size: 2vmax;
+        font-size: 2.7vmax;
         font-weight: 700;
     }
 
@@ -389,9 +397,10 @@ body{
         flex-direction: column;
     }
     #page-pendahuluan .pendahuluan-content .page1 p{
-        font-size: 2.2vmax;
-        word-spacing: 0px;
-        letter-spacing: -1px;
+        text-align: justify;
+        font-size: 2.6vmax;
+        word-spacing: 0;
+        letter-spacing: 0;
         line-height: 3.5vmax;
     }
     #page-pendahuluan .pendahuluan-content img{
@@ -450,7 +459,7 @@ body{
         margin: 0 auto;
     }
     #page-opacity .opacity-content .sub-content p{
-        text-align: justify;
+        text-align: left;
     }
     #page-opacity .opacity-content .sub-content .page2{
         width: 100%;
@@ -471,11 +480,12 @@ body{
         flex-direction: column;
     }
     #page-color .color-content .template{
-        width: 50vmin;
+        width: 75vmin;
         margin: auto;
     }
-    #page-color .color-content .rgba{
-        word-spacing: 1px;
-        letter-spacing: 1px;
+    #page-color .color-content .rgba p{
+        margin-top: 20px;
+        word-spacing: 0;
+        letter-spacing: -1px;
     }
 }
